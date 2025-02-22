@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% block title %}Meus filmes favoritos{% endblock %}
+{% block content %}
+<div class="container">
+  <h1 class="heading">Meus TOP filmes favoritos</h1>
+  <p class="description">Aqui estão eles:</p>
+
+  {%for movie in movies%}
+  <div class="card">
+    <div class="front" style="background-image: url('{{movie.img_url}}')">
+      <p class="large">{{movie.id}}</p>
+    </div>
+    <div class="back">
+      <div>
+        <div class="title">
+          {{movie.title}} <span class="release_date">({{movie.year}})</span>
+        </div>
+        <div class="rating">
+          <label>{{movie.rating}}</label>
+          <i class="fas fa-star star"></i>
+        </div>
+        <p class="review">"{{movie.review}}"</p>
+        <p class="overview">{{movie.description}}</p>
+
+        <a href="{{ url_for('updateMovie', movie_id=movie.id) }}" class="button"
+          >Adicionar</a
+        >
+        <a
+          href="{{ url_for('deleteMovie', movie_id=movie.id) }}"
+          class="button delete-button"
+          >Deletar</a
+        >
+      </div>
+    </div>
+  </div>
+  {%endfor%}
+</div>
+<div class="container text-center add">
+  <a href="add" class="button">Adicionar Filme</a>
+</div>
+
+<footer class="container add"></footer>
+
+{% endblock %}
