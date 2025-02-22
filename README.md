@@ -1,6 +1,8 @@
 # 🎬 Lista de Filmes Favoritos  
+[demo](MOVIES/static/movies_screenshot.PNG)
 
-Este é um aplicativo web simples para gerenciar sua lista de filmes favoritos.  
+Este é um aplicativo web simples para gerenciar sua lista de filmes favoritos.
+
 Você pode **adicionar, visualizar, atualizar e excluir filmes**, além de classificá-los com uma **nota e um comentário**.  
 
 ## 🚀 Tecnologias utilizadas  
