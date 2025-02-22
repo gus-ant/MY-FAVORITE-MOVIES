@@ -1,5 +1,5 @@
 # 🎬 Lista de Filmes Favoritos  
-[demo](MOVIES/static/movies_screenshot.PNG)
+![demo](MOVIES/static/movies_screenshot.PNG)
 
 Este é um aplicativo web simples para gerenciar sua lista de filmes favoritos.
 
